@@ -45,3 +45,8 @@ button{
 .btn-first{
     color: white;
 }
+@media only screen and (max-width: 650px) {
+    .second-part{
+        height: 450px;
+    }
+}
