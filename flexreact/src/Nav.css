@@ -30,3 +30,23 @@ nav button{
     color: antiquewhite;
     margin-right: 1.5%;
 }
+@media only screen and (max-width: 650px) {
+    nav button{
+        flex: 0;
+        padding: 2%;
+    }
+    .fa-bars{
+    color: white;
+    padding: 4%;
+    }
+    .hide{
+        display: none;
+    }
+    li{
+        display: block;
+    }
+    nav img{
+        position: relative;
+        left: -25%;
+    }
+}
