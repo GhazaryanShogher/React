@@ -1,0 +1,34 @@
+footer, .links, .subscribe{
+    display: flex;
+}
+.subscribe button{
+    border-radius: 0;
+    color:white;
+    height: 33px;
+}
+.subscribe input{
+    height: 25px;
+    padding: 2px 5px;
+}
+footer{
+    align-content: space-between; 
+    background-color: #333333;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.links{
+    flex: 2;
+    align-content: center;
+    margin-left: 7%;
+}
+.subscribe{
+    margin: auto;
+}
+.links a{
+    color:white;
+    padding: 20px 15px;
+    text-decoration: none;
+}
+footer{
+    color: antiquewhite;
+}

@@ -1,0 +1,23 @@
+.with-icon{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center
+}
+.about{
+    display: flex;
+}
+.with-icon hr{
+    width: 75px;
+    height: 3px;
+    background-color: #fa5c4f;
+    border: none;
+    margin: 20px auto;
+}
+.wrench{
+    margin-bottom: 18px!important;
+}
+.with-icon p{
+    margin: auto;
+    width: 80%;
+}

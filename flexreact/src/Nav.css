@@ -18,3 +18,15 @@ li{
 i{
     color: #333333;
 }
+nav img{
+    flex: 1;
+    height: 50px;
+}
+nav ul{
+     flex: 10;
+}
+nav button{
+    flex: 1;
+    color: antiquewhite;
+    margin-right: 1.5%;
+}
