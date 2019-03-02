@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Data from './data'
+import Data from './Data'
 import './App.css';
 
 class Table extends Component {
@@ -17,7 +17,7 @@ class Table extends Component {
             let backendData = this.BackendDatas().then((results) => {return results});
             let trs = [];
             for (let i = 0; i < backendData.length; i++) {
-                trs.push(<tr row = {BackendData[i]} />);
+                trs.push(<tr row = {backendData[i]} />);
             }
             return trs;
         }
@@ -31,4 +31,4 @@ class Table extends Component {
   }
 }
 
-export default App;
+export default Table;

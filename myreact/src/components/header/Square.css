@@ -1,0 +1,14 @@
+.changeColor{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    font-size: 24px;
+    line-height: 150px;
+    font-weight: 700;
+    animation: mymove 10s infinite;
+}
+@keyframes mymove {
+    0%  {left: 0;}
+    50% {left:95%}
+    100% {left: 0;}
+}

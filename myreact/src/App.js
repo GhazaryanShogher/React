@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Table from './table'
-import './App.css';
+import Table from './Table'
+import Square from './components/header/Square'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        
+        <Square/>
       </div>
     );
   }
