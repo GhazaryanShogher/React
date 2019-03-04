@@ -1,0 +1,29 @@
+.btn{
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: inline-block;
+}
+.clock{
+    width: 230px;
+    height: 225px;
+    background-image: url("./images/clock2.png");
+    background-repeat: no-repeat;
+    margin-top:20px;
+    margin-left: 10px;
+}
+#overlay {
+    position: fixed;
+    width: 3px;
+    height: 100px;
+    top: 69px;
+    left: 119px;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 2;
+    cursor: pointer;
+  }
