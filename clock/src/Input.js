@@ -5,7 +5,7 @@ class Input extends Component {
   render() {
     return (
       <React.Fragment>
-      <input type = "number" min="0" max="12" className="inpVal"></input>
+      {/* <input type = "number" min="0" max="12" className="inpVal" id="time"></input> */}
       </React.Fragment>
     );
   }

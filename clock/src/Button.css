@@ -17,13 +17,28 @@
 }
 #overlay {
     position: fixed;
-    width: 3px;
-    height: 100px;
-    top: 69px;
-    left: 119px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
+    opacity:1;
+  }
+  .arrow{
+    width: 3px;
+    height: 73px;
+    top: 96px;
+    left: 119px;
     background-color: black;
     z-index: 2;
     cursor: pointer;
+    position: absolute;
   }
+  .inpVal{
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border: 1px solid gray;
+}
