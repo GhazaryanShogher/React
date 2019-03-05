@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Input from './Input';
 import './Button.css';
 
 class Button extends Component {
@@ -7,8 +6,11 @@ class Button extends Component {
       value: "click",
   };
   timeValue = document.getElementById('time').value;
-  const time = (timeValue) => {
-     console.log(timeValue);
+  time = (timeValue) => {     
+    this.setState(
+      {   value:"try again"
+      }
+      )
   }
   
     
@@ -16,7 +18,7 @@ class Button extends Component {
   render() {
     return (
       <React.Fragment>
-      <input type = "number" min="0" max="12" className="inpVal" id="time"></input>
+      <input type = "number" min="0" max="12" className="inpVal" id="time" value = "0"></input>
       <input type = "button" value={this.state.value} className="btn" id = "timeVal" onClick="time()"></input>
       <div className="clock">
         <div id="overlay">
