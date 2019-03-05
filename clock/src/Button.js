@@ -3,26 +3,34 @@ import './Button.css';
 
 class Button extends Component {
   state = {
-      value: "click",
+      text: "click",
+      value:"",
+      degree: "",
   };
-  timeValue = document.getElementById('time').value;
-  time = (timeValue) => {     
+ 
+  time = (event) => {     
     this.setState(
-      {   value:"try again"
+      {   
+        value:30*event.target.value
       }
       )
   }
-  
-    
-    
+   rotate = () => {
+    this.setState(
+      {  
+         degree:this.state.value
+      })
+   }
+   
+          
   render() {
+    console.log(this.state.degree)
     return (
       <React.Fragment>
-      <input type = "number" min="0" max="12" className="inpVal" id="time" value = "0"></input>
-      <input type = "button" value={this.state.value} className="btn" id = "timeVal" onClick="time()"></input>
+      <input type = "number" min="0" max="12" className="inpVal" id="time"  onChange = {this.time} />
+      <input type = "button" value={this.state.text} className="btn" id = "timeVal" onClick = {this.rotate} />
       <div className="clock">
-        <div id="overlay">
-          <div className = "arrow"></div>
+        <div id="overlay" style = {{transform: `rotate${this.state.style}deg`}}>
         </div>
       </div>
       </React.Fragment>

@@ -15,17 +15,8 @@
     margin-top:20px;
     margin-left: 10px;
 }
-#overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity:1;
-  }
-  .arrow{
+
+  #overlay{
     width: 3px;
     height: 73px;
     top: 96px;
@@ -34,6 +25,7 @@
     z-index: 2;
     cursor: pointer;
     position: absolute;
+    transform-origin: 50% 100%;
   }
   .inpVal{
     font-size: 18px;
