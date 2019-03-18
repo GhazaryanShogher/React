@@ -6,18 +6,18 @@ import './App.css';
 
 class App extends Component {
   state = {
-    clicked: false
+    clicked: true
   }
   deleteComponent = () => {
     this.setState({
-        clicked: true
+        clicked: false
     })
 }
   render() {
     return (
       <div className="App">
-        {this.state.clicked ? <Fetch /> : <Fetch />}
-        {/* <button onClick={this.deleteComponent}>Click</button> */}
+        {this.state.clicked ? <Fetch /> : <Count />}
+        <button onClick={this.deleteComponent}>Click</button>
       </div>
     );
   }

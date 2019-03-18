@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
+import Form from '../src/Components/Forms/Form';
+import Signin from '../src/Components/Signin/Signin';
+import Button from '../src/Components/Button/Button';
 import './App.css';
 
 class App extends Component {
+  stat = ()=> alert("hi");
   render() {
     return (
       <div className="App">
         <div id="overlay"></div>
-        <div className="form">
-          <h1>Registration</h1>
-          <div className="w3-rest">
-              <input  id="first" type="text" placeholder="First Name" required />
-          </div>
+        <div>
+        <Button name = "Create account" click = {this.stat }/>
+        <Button name = "Sign in"/>
         </div>
+       
 
-      </div>
+        {/* <Form /> */}
+        {/* <Signin /> */}
+        </div>
     );
   }
 }
