@@ -16,7 +16,7 @@ class App extends Component {
         </div>
        
 
-        {/* <Form /> */}
+        <Form />
         {/* <Signin /> */}
         </div>
     );

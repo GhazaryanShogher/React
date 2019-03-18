@@ -7,7 +7,7 @@ class Form extends Component {
     constructor(props){
         super(props)
     }
-
+// Registration popup
   render() {
     return (
         <div className="form">
