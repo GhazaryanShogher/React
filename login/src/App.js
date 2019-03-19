@@ -5,19 +5,37 @@ import Button from '../src/Components/Button/Button';
 import './App.css';
 
 class App extends Component {
-  stat = ()=> alert("hi");
+  state={
+    showStatus:'none',
+    statusLogin: 'none'
+  }
+  
+  registration = ()=>{
+    this.setState({
+      showStatus:'block',
+      statusLogin: 'none'
+    })
+  }
+
+  login = () => {
+    this.setState({
+      showStatus:'none',
+      statusLogin: 'block'
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <div id="overlay"></div>
-        <div>
-        <Button name = "Create account" click = {this.stat }/>
-        <Button name = "Sign in"/>
+        <div className = "button-standart">
+        <Button name = "Create account" click = {this.registration }/>
+        <Button name = "Sign in" click = {this.login }/>
         </div>
        
 
-        <Form />
-        {/* <Signin /> */}
+        <Form status = {this.state.showStatus}/>
+        <Signin status = {this.state.statusLogin}/>
         </div>
     );
   }

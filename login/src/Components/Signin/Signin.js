@@ -7,7 +7,7 @@ import '../Forms/Form.css';
 class Signin extends Component {
   render() {
     return (
-        <div className="form">
+        <div className="form" style={{display:this.props.status}}>
             <h1>Sign in</h1>
             <Input id="emailaddress" type="email" placeholder="Email"/>
             <Input id="pass" type="password" placeholder="Password"/>

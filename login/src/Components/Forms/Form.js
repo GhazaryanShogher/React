@@ -10,7 +10,7 @@ class Form extends Component {
 // Registration popup
   render() {
     return (
-        <div className="form">
+        <div className="form" style={{display:this.props.status}}>
             <h1>Registration</h1>
             <Input id="first" type="text" placeholder="First Name"/>          
             <Input id="last" type="text" placeholder="Last Name"/>
