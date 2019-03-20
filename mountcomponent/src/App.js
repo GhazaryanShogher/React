@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Count from "./Count";
 import Fetch from "./Fetch";
 
-import './App.css';
-
 class App extends Component {
   state = {
     clicked: true
