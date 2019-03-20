@@ -1,3 +1,7 @@
+$darkgreen : #1f5b34;
+$green:#43b431;
+$white:#ebf7ef;
+
 .App {
   text-align: center;
 }
@@ -21,6 +25,19 @@
 
 .App-link {
   color: #61dafb;
+}
+.button-style{
+  color:white;
+  outline: none;
+  border: none;
+  padding: 10px;
+  background-color: $darkgreen;
+  &:hover{
+    background-color:$green;
+
+  }
+  
+
 }
 body {
   margin: 0;

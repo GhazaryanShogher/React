@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         {this.state.clicked ? <Fetch /> : <Count />}
-        <button onClick={this.deleteComponent}>Click</button>
+        <button className = "button-style" onClick={this.deleteComponent}>Click</button>
       </div>
     );
   }
