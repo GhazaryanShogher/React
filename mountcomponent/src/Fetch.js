@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 class Fetch extends Component{
     constructor(props) {
         super(props);
