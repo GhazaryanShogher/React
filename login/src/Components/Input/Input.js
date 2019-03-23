@@ -6,10 +6,12 @@ class Input extends Component {
         super(props)
     }
 
+    callback = () => this.props.callback;
+
   render() {
     return (
           <div className="w3-rest">
-              <input  id={this.props.id} type={this.props.type} placeholder={this.props.placeholder} required />
+              <input  id={this.props.id} type={this.props.type} placeholder={this.props.placeholder} required onChange = {this.props.callback}/>
           </div>
     );
   }
