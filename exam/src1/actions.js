@@ -18,9 +18,3 @@ export function decrementNumber(number){
     }
 };
 
-export function resetNumber(number){
-    return {
-        type: "RESET",
-        number
-    }
-};
