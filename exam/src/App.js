@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import Main from './Main';
 import Header from './Header';
-import {Switch, Route } from 'react-router-dom';
+// import {Switch, Route } from 'react-router-dom';
 import ReduxEx from "./reduxEx";
 
 class App extends Component {
@@ -42,10 +42,10 @@ class App extends Component {
         return(
             <div>
                 <ReduxEx />
-                <Switch>
+                {/* <Switch>
                     <Route path='/header' component={Header} />
                     <Route path='/main' component={Main} />
-                </Switch>
+                </Switch> */}
             </div>
      
         );
